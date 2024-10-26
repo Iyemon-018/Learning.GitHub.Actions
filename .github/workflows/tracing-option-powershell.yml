@@ -12,7 +12,8 @@ jobs:
 
       - name: Run PowerShell script with tracing
         run: |
-          $PSDebugPreference = "Continue"
+          # https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/set-psdebug?view=powershell-7.4
+          Set-PSDebug -Trace 1
           git --version
           git branch
           dir
