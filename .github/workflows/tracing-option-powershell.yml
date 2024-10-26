@@ -25,6 +25,6 @@ jobs:
       - name: Run PowerShell script file with tracing
         run: |
           Set-PSDebug -Trace 1
-          powershell -NoProfile -ExecutionPolicy Unrestricted ./scripts/pws-action.ps1
+          powershell -NoProfile -ExecutionPolicy Unrestricted ./.github/workflows/scripts/pws-action.ps1
           Set-PSDebug -Trace 0
         shell: pwsh
