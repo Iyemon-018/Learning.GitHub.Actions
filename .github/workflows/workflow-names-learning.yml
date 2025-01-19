@@ -10,5 +10,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: ジョブ その1のコンテキスト出力
+        run: echo "${CONTEXT}"
+        env:
+          CONTEXT: ${{ toJSON(github) }}
+
       - name: ジョブ その1のアクション
         run: echo "Hello world."
