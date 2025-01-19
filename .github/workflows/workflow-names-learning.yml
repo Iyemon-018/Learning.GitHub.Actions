@@ -1,0 +1,14 @@
+name: Workflow names learning
+run-name: ワークフローの各名称設定について学習する
+
+on:
+  workflow_dispatch: {}
+
+jobs:
+  workflow-job1:
+    name: ワークフローのジョブ その1
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: ジョブ その1のアクション
+        run: echo "Hello world."
