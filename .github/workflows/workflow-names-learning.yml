@@ -2,6 +2,8 @@ name: Workflow names learning
 run-name: ワークフローの各名称設定について学習する
 
 on:
+  push:
+  pull_request:
   workflow_dispatch: {}
 
 jobs:
