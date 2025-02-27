@@ -12,4 +12,4 @@ inputs:
 runs:
     using: "composite"
     steps:
-        - run: echo "${{ inputs.first_name }} ${{ inputs.last_name }} from GitHub Actions!"
+      - run: echo "${{ inputs.first_name }} ${{ inputs.last_name }} from GitHub Actions!"

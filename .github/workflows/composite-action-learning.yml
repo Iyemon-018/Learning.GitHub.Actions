@@ -18,7 +18,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Run composite action
-        uses: ./composite/composite-action
+        uses: ./.github/composite/composite-action
         with:
             param1: 'value1'
             param2: 'value2'
