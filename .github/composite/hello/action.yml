@@ -13,3 +13,4 @@ runs:
     using: "composite"
     steps:
       - run: echo "${{ inputs.first_name }} ${{ inputs.last_name }} from GitHub Actions!"
+        shell: bash
