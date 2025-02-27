@@ -1,0 +1,25 @@
+name: Composite Action Workflow
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  example-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Run composite action
+        uses: ./composite/composite-action
+        with:
+            param1: 'value1'
+            param2: 'value2'
+            param3: 'value3'
